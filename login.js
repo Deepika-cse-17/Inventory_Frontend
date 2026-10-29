@@ -1,4 +1,4 @@
-const API_ROOT = `${window.location.origin}/api`;
+const API_ROOT = "https://inventory-backend-7bni.onrender.com/api";
 let csrfToken = "";
 
 async function requestJson(url, options = {}) {
@@ -9,7 +9,7 @@ async function requestJson(url, options = {}) {
   const response = await fetch(url, {
     ...options,
     headers,
-    credentials: "same-origin"
+    credentials: "include"
   });
   let data;
   try {

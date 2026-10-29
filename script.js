@@ -1,4 +1,4 @@
-const API_ROOT = `${window.location.origin}/api`;
+const API_ROOT = "https://inventory-backend-7bni.onrender.com/api";
 const API_BASE_URL = `${API_ROOT}/inventory`;
 const PAGE_SIZE = 10;
 const EXPIRING_WINDOW_DAYS = 30;
@@ -93,7 +93,7 @@ async function requestJson(url, options) {
   const response = await fetch(url, {
     ...options,
     headers,
-    credentials: "same-origin"
+    credentials: "include"
   });
   let data;
   try {

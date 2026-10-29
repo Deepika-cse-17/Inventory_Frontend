@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: inventory-frontend
+    runtime: static
+    repo: https://github.com/Deepika-cse-17/Inventory_Frontend.git
+    branch: main
+    buildCommand: ""
+    staticPublishPath: ./
